@@ -9,11 +9,14 @@
 <body>
     <header>
         <nav>
-            <a class="options" href="https://mcsilva-dev.github.io/Trabalho-Desenvolvimento-Web/index.html">Início</a>
-            <a class="options" href="https://mcsilva-dev.github.io/Trabalho-Desenvolvimento-Web/html/sobre-mim.html">Sobre Mim</a>
-            <a class="options" href="https://mcsilva-dev.github.io/Trabalho-Desenvolvimento-Web/html/formacao.html">Formação</a>
-            <a class="options" href="https://mcsilva-dev.github.io/Trabalho-Desenvolvimento-Web/html/portfolio.html">Portfólio</a>
-            <a class="options" href="https://mcsilva-dev.github.io/Trabalho-Desenvolvimento-Web/html/contato.html">Contato</a>
+            <div class="menu-hamburguer" onclick="toggleMenu()">☰</div>
+            <div class="menu-links">
+                <a class="options" href="https://mcsilva-dev.github.io/Trabalho-Desenvolvimento-Web/index.html">Início</a>
+                <a class="options" href="https://mcsilva-dev.github.io/Trabalho-Desenvolvimento-Web/html/sobre-mim.html">Sobre Mim</a>
+                <a class="options" href="https://mcsilva-dev.github.io/Trabalho-Desenvolvimento-Web/html/formacao.html">Formação</a>
+                <a class="options" href="https://mcsilva-dev.github.io/Trabalho-Desenvolvimento-Web/html/portfolio.html">Portfólio</a>
+                <a class="options" href="https://mcsilva-dev.github.io/Trabalho-Desenvolvimento-Web/html/contato.html">Contato</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -29,5 +32,11 @@
             <p>Estou sempre a disposiçaõ para novos desafios e experiências, sempre encaro com total empenho e dedicação. Aguardo seu contato na aba <a href="https://mcsilva-dev.github.io/Trabalho-Desenvolvimento-Web/html/contato.html">contato</a>.</p>
         </section>
     </main>
+    <script>
+        function toggleMenu() {
+            const menuLinks = document.querySelector('.menu-links');
+            menuLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
